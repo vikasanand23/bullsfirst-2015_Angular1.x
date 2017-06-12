@@ -1,0 +1,20 @@
+{
+  "name": "bullsfirst",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "ws --port=3000"
+  },
+  "devDependencies": {
+    "angular": "^1.6.4",
+    "angular-mocks": "^1.6.4",
+    "angular-ui-router": "^1.0.3",
+    "jasmine-core": "^2.6.3",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-jasmine": "^1.1.0",
+    "local-web-server": "^0.5.23"
+  },
+  "dependencies": {
+    "chart.js": "^2.6.0"
+  }
+}

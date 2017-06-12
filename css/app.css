@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeue.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeue.woff2') format('woff2'), url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf') format('truetype'), url('../fonts/HelveticaNeue.svg#svgHelveticaNeue') format('svg');
+}
+body {
+    font-size: 14px;
+    font-family: "Helvetica Neue", "Arial", "sans-serif";
+    /*	VA*/
+    max-width: 960px;
+    background-color: #58585a;
+    margin: 0 auto;
+}
+button {
+    cursor: pointer;
+    width: 110px;
+    /*
+    background: green;
+    opacity: 0.5;
+*/
+    /*	VA*/
+    background: #ef4423;
+    border: none;
+    color: #fff;
+    /*    border: 1px solid darkred;*/
+    margin-right: 20px;
+    /*    box-shadow: 1px 1px 3px #333;*/
+}
+button:hover {
+    box-shadow: 0px 0px 4px 1px #000;
+}
+button:active,
+button:focus {
+    outline: none
+}
+img {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+}
+/* Header */
+
+#header {
+    display: flex;
+    background: orange;
+    padding: 30px 20px;
+    /*	VA*/
+    margin: 10px 10px 0px 10px;
+}
+#header .logo {
+    /*	VA*/
+    position: relative;
+    padding: 12px 46px 16px;
+}
+#header .logoHeader {
+    width: 40px;
+    height: 34px;
+    position: absolute;
+    bottom: 56px;
+    left: 45px;
+}
+#header .logo h1 {
+    margin: 0px;
+    font-size: 28px;
+}
+#header .logo .subtitle {
+    /*	VA*/
+    font-size: .8rem;
+    font-family: 'Helvetica Neue medium';
+    margin-left: 15px;
+    font-style: italic;
+    /*
+    font-size: 0.8rem;
+	font-family: 'Helvetica Neue';
+*/
+}
+#header .actions {
+    margin: 2px 20px 0px 0px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+#header .actions button {} #content {
+    display: flex;
+    /*	VA*/
+    /*margin-top: 20px;*/
+    margin: 0px 10px 10px 10px;
+    padding-bottom: 45px;
+    background-color: #fff;
+}
+/* Left Section */
+
+.left-section {
+    flex: 1;
+    /*	VA*/
+    /*    margin-right: 20px;*/
+    margin: 20px 20px 0px 60px;
+}
+.left-section .header {
+    /*	VA*/
+    
+    position: relative;
+    /*    display: flex;*/
+    height: 30px;
+    margin-bottom: 5px;
+}
+/*VA*/
+
+.left-section .header strong {
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+}
+.left-section .header button {
+    height: 25px;
+    width: 105px;
+    background-color: #f47621;
+    margin-right: 3px;
+}
+.left-section .header > .actions {
+    /*	VA*/
+    /*
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+*/
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+}
+/*VA*/
+/*	VA*/
+
+table {
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+table th,
+table td {
+    padding: 5px 0px 6px;
+    border-bottom: 1px solid #e7e8e9;
+    font-size: 11px;
+    font-family: 'Helvetica Neue medium';
+}
+tr:last-child td {
+    border-bottom: 0;
+}
+table th:first-child,
+table td:first-child {
+    padding: 0px 0px 0px 20px;
+    text-align: left;
+}
+table th {
+    background: #9d9fa2;
+    color: #ecdec6;
+    font-family: helvetica neue;
+    font-size: 10px;
+    text-transform: uppercase;
+    /*    padding: 5px;*/
+}
+table td:nth-child(2n) {
+    /*   background-color: yellow;*/
+    
+    text-align: center
+}
+table th:nth-child(3),
+table td:nth-child(3) {
+    text-align: right;
+}
+.totals td {
+    border-top: 3px solid #ccc;
+}
+.legend {
+    width: 24px;
+    height: 12px;
+    /*	VA*/
+    margin: 0px auto;
+    border: 1px solid #c7c8ca;
+}
+/* Right Section */
+
+.right-section {
+    width: 238px;
+    margin: 55px 60px 0px 0px;
+    background: #ccc;
+}
+.right-section .chart {
+    width: 238px;
+    height: 400px;
+    margin: 56px 0px;
+}
+.right-section .help-label {
+    padding: 0px 9px;
+    font-family: 'Helvetica Neue medium';
+    font-size: 10px;
+    font-style: italic;
+}
+/*VA*/
+
+.customIcon {
+    border-radius: 50%;
+    padding: 1px;
+}
+.test {
+    position: relative;
+    width: 100%;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px
+}
+.actions .fa {
+    display: block;
+    font-size: 21px;
+    margin-bottom: 6px;
+}
+.left-section .actions .fa {
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px 3px;
+}
+.left-section .actions button: nth-child(2n) {
+    background-color: green;
+}
+.right-section h4 {
+    margin: 8px 8px 3px;
+}
